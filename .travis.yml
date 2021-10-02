@@ -1,11 +1,37 @@
 language: node_js
 node_js:
   - node
+
+env:
+  global:
+    # COVERITY_SCAN_TOKEN
+    # ** specific to your project **
+    - secure: "j2bukukJ2pe7NL6ItLEwOXYqIqwjx/c9uZSKkiAWcYdsVvYBx672/oQWJXMWY1rSN6veJZiZYqTR8BVm13xXXAq/EN4KgPz2Y3FUHGl91jT5F4yRbuItnfdYPpbPQp8vANcmn3no1bT7NgErjFvvCSi5mTprib/l1E5kKhNhh33KMYX0a842XWR5JPL1wkNI73buXIbc9NK/TProS6y3SgYI0CTFDNoaPR++9mLdNzHuT891fZL06iAL3AuiLpAi13ePCCwkVFat8/Ib51AHYT3u/frs5Ay1FBaCkgY0kyvgddVnlf6fU+U5+81sIvcBjJDef99wU5dwmFEtS/b0GvnlOnuP0AjGmxH/4CmK5PK4FNYBFrzPT+YP7QP54tmyUlNqmnmt0VKV7n4cOKSe4vkNeJQ1l7ib6JciKrQwjHwubkpJsLAzctN56G+aAz9Xb1ErDi/GPaIBl2MLRNOUuqX1sy9R13aVJzfl9VeteYGCCazXRRKxovhI0tBID3w5Oo7eZf/4QrCDKAqI5ev9HHlV+CRWs9jRpTHX7VPLzjkEwd4jKFP/ANNjeWiH85z0oVNvA+iSytGNqH2vclodpzM99dT+udbUtwHMloe+T723MVIIyklP7y6uDm9m98H6RNXA3D2AVrgzuN1E4XJUfgZUgq0EjG71cjkSjapO8lE="
+
 addons:
-  # sonarcloud:
-  #   organization: "fedn20" # the key of the org you chose at step #3
-  #   token:
-  #     secure: "CqKvdQZRR65uvB3n8QqGMZOlPhLWO04oFU/VBqrFp7CpRBq+PICZzCiervWraVqA1/2Ln/TErFhZD1RGE7lrWu5wLZ2T3JO23O3riPd1Cqv4R9Sr4Y9dEeMZ8xWYCV70qQGftklFMnbdVKPvudkzSNYIFBGbepBZ0mIt4jqY3FR0pmCiDG+Kv8MQiuDG0EI/z+WggCPBX6W3jZfEmpUkUK6urC0ix+zClVMZO9fhlqCmXsMXOLlvUjfFpFwGMmLs3Jt1J5Gm8oosoW9BaQRgnpFl6EJFY9jBbYs70xee6mQ6ySaLtl6hU8v4QXXVOJwdmdHwMvPa7h+c7+QMMktogWSvghFWYBsr+SvR2iiMUQWYOccCJ28QvKwTtdYkSpbQBO7Qw83dfxlQi6gp2it66LFTgSHnGst+tPF6T/sqysAQ27daoLBm6G0/vlPtxcldrV1amn3c1tvzkgsvCguUIvHD4tbHBFOthhjPHT1eH853DMGmO4afs1nubokCt5a6rbeVRPPNkvfV7ktKkGOrnunPEzTWrHgSQ8zlDvqRM4YxAKlgHiYy4i5YgpsVvLwAE+Y+yQp1IadDvt17UGF5XMsqdptBOgeUvxH1c8IbcDBQA6m1MEZuEiGTPRLZ1GKvuQZf3bFptFrT3si1sEd5jUvuYc9LvCon79T5vmzgUV4="
+  coverity_scan:
+    # GitHub project metadata
+    # ** specific to your project **
+    project:
+      name: fedn20/react-security
+      version: 0.1.0
+      description: react-security
+
+    # Where email notification of build analysis results will be sent
+    # notification_email: scan_notifications@example.com
+
+    # Commands to prepare for build_command
+    # ** likely specific to your build **
+    build_command_prepend: ./configure
+
+    # The command that will be added as an argument to "cov-build" to compile your project for analysis,
+    # ** likely specific to your build **
+    build_command: make
+
+    # Pattern to match selecting branches that will run analysis. We recommend leaving this set to 'coverity_scan'.
+    # Take care in resource usage, and consider the build frequency allowances per
+    #   https://scan.coverity.com/faq#frequency
+    branch_pattern: coverity_scan
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
