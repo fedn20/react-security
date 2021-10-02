@@ -1,4 +1,4 @@
-[![Build Status](https://app.travis-ci.com/fedn20/react-security.svg?branch=main)](https://app.travis-ci.com/fedn20/react-security) [![Coverage Status](https://coveralls.io/repos/github/fedn20/react-security/badge.svg?branch=main)](https://coveralls.io/github/fedn20/react-security?branch=main)
+[![Build Status](https://app.travis-ci.com/fedn20/react-security.svg?branch=main)](https://app.travis-ci.com/fedn20/react-security) [![Coverage Status](https://coveralls.io/repos/github/fedn20/react-security/badge.svg?branch=main)](https://coveralls.io/github/fedn20/react-security?branch=main) [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=fedn20_react-security)
 
 # Getting Started with Create React App
 
