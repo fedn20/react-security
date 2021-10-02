@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/fedn20/react-enterprise/badge.svg?branch=main&t=60QWgJ)](https://coveralls.io/github/fedn20/react-enterprise?branch=main)
+[![Build Status](https://app.travis-ci.com/fedn20/react-enterprise.svg?token=aTy7MSqTkzsxyz72JfdE&branch=main)](https://app.travis-ci.com/fedn20/react-enterprise) [![Coverage Status](https://coveralls.io/repos/github/fedn20/react-enterprise/badge.svg?branch=main&t=60QWgJ)](https://coveralls.io/github/fedn20/react-enterprise?branch=main)
 
 # Getting Started with Create React App
 
