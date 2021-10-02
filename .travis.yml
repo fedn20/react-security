@@ -10,7 +10,7 @@ script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
   - yarn report-coverage
-  - sonar-scanner  -Dsonar.organization=fedn20 -Dsonar.projectKey=fedn20_react-security  -Dsonar.sources=.  -Dsonar.host.url=https://sonarcloud.io
+  - sonar-scanner -D"sonar.organization=fedn20" -D"sonar.projectKey=fedn20_react-security" -D"sonar.sources=." -D"sonar.host.url=https://sonarcloud.io"
   - yarn build
 
 deploy:
