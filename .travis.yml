@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - node
+addons:
+  sonarcloud:
+    organization: "react-dev" # the key of the org you chose at step #3
+    token:
+      secure: SONAR_TOKEN # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - yarn test
+  - yarn report-coverage
+  - sonar-scanner
+  - yarn build
+
+cache:
+  directories:
+    - node_modules
