@@ -5,13 +5,21 @@ addons:
   sonarcloud:
     organization: "react-dev" # the key of the org you chose at step #3
     token:
-      secure: b8163bfac2da734d8fa8bd3532a8133d2f0e766e # encrypted value of your token
+      secure: $SONAR_TOKEN # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
   - yarn report-coverage
   - sonar-scanner
   - yarn build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: main
 
 cache:
   directories:
