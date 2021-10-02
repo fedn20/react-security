@@ -20,7 +20,3 @@ deploy:
   keep_history: true
   on:
     branch: main
-
-cache:
-  directories:
-    - node_modules
