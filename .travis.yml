@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: "react-dev" # the key of the org you chose at step #3
     token:
-      secure: 1635e23e4764ab4b1c724cf1ec31f58d7a52c881 # encrypted value of your token
+      secure: SONAR_TOKEN # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
