@@ -3,9 +3,9 @@ node_js:
   - node
 addons:
   sonarcloud:
-    organization: "react-dev" # the key of the org you chose at step #3
+    organization: "react-security" # the key of the org you chose at step #3
     token:
-      secure: "S0bQJLqUBe3jnTBuIsOYpDhcSAfuaiWAp50hq7gY272sjLmgepp/nxrCk1W7zhJTB8AizV+13h3eiC7KJnda1qMbA+7NsRsnGB0ukZvsAyK1gYSKBMmaiTXmWO9BNDVEfCZh23UlrlxyTWlSSnGPrYtc1yjX4fSb0SHN2ukYJcNVSni/bMA26SmiDiwn76/wLbnmHcc1P1nWwazC6iuExmoaulra1iQqtHG2KVNc0tvtIsqHTbum9jizRa9WDFmOmDWEL+7Q6E8YwPoXDQ9pe926hPOyruXW4RMScTf94RN8gGiIkxjBBPKINjx3/tGAfgViRILkHUQE8Jaqm9P8uC2brwVi2V39iS4A9CX1szDR0LQjlYbgw5vqa4lyp7gVItGgqiIpLeY/4uTb3ovbL3Ky7Bb/M3j6eSE413a+xJyc/EoltLILDFPvYGT2bW5PkP12SkD1g91XkL2lmMvcikF84x1VrYj9y8HJoqozSRBLtca48KXraF6O0dHuy2uOyZmYES7LtprAWFNSPJl6UguNHVlq+YT6h8gcmTTzW1Aw8OR0z0ajUnkj+hYR0I5Ad45xSOOkMpofMB84U69Y8lDXTFJck0yLv16oDl7vfJdxVb8786q56v7Qg5CLHc5uBn94kB7W4C8vWNg+3UzTHNZ8+DhvckVJBfTKkiEq3KE="
+      secure: "BG59d3Pu+riPig0Je9kjYePJuY5J999Hld5wAD3PWOuNtHUjMfmlhHNWitAPJI/1iuGZhJlkf7hs3XVwmL8USH9t5ILEktni2RGQfcsdZZnjwDgjOQIQcFpZiNABpqlFKrr/fvJdHsytvv7GzZfbX/7lDboRxcz4h6PZnRciRXLEPnjRjwJlPd9xEgu0ild/w1/JBGYTJUQZc6wHsCnjKEiIn8xiudblRIdCtNm5z2of6JKGGCWY117F9FPmjHUkiugZboL8uzpd8UliWlC4fQcXefbcJ7M8UABAt6lPzOM6TM9xdx7CMtSgqY2LaiNiL7F5USWa97g+dmLHmmtkH85HJBRG67YYP/3JNO6tDv0zs8cqhZxleKOtyuNAYqVMikzDCf5iwGF4gVBQ4DBxEMxFrOLKNBSN+6T6YJMd/Anc/kYfTEDqY32kkMJxtElRAwMha0Q4juQbJab/wTVKL7DsvnBwAw2nO0tDi30NmE+k61/z7slweCphSBaO3Pu0AamSUlS3BWmzI7t+XyBKgOA+aDM+F92X7AeoknA1JZVVD4WQ1cbp8CPBYGs/5NELzzKR7p6QAvJVIpmPVEdqNh2/z/kA805QgXdU99+LsJ5j4zb1ePy0xxzMXGK8SxKFuulgq+yRC+5YgHzVVrbllvbK0RAPQwsrEpI4WAjjWcs="
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
