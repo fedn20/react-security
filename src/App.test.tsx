@@ -7,5 +7,5 @@ test("renders learn react security", () => {
   const securityElement = screen.getByRole("heading", {
     name: /react security/i,
   });
-  expect(securityElement).toBeInTheDocument();
+  expect(securityElement).toBeDefined();
 });
