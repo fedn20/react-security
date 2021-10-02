@@ -2,15 +2,15 @@ language: node_js
 node_js:
   - node
 addons:
-  # sonarcloud:
-  #   organization: "fedn20" # the key of the org you chose at step #3
-  #   token:
-  #     secure: "CqKvdQZRR65uvB3n8QqGMZOlPhLWO04oFU/VBqrFp7CpRBq+PICZzCiervWraVqA1/2Ln/TErFhZD1RGE7lrWu5wLZ2T3JO23O3riPd1Cqv4R9Sr4Y9dEeMZ8xWYCV70qQGftklFMnbdVKPvudkzSNYIFBGbepBZ0mIt4jqY3FR0pmCiDG+Kv8MQiuDG0EI/z+WggCPBX6W3jZfEmpUkUK6urC0ix+zClVMZO9fhlqCmXsMXOLlvUjfFpFwGMmLs3Jt1J5Gm8oosoW9BaQRgnpFl6EJFY9jBbYs70xee6mQ6ySaLtl6hU8v4QXXVOJwdmdHwMvPa7h+c7+QMMktogWSvghFWYBsr+SvR2iiMUQWYOccCJ28QvKwTtdYkSpbQBO7Qw83dfxlQi6gp2it66LFTgSHnGst+tPF6T/sqysAQ27daoLBm6G0/vlPtxcldrV1amn3c1tvzkgsvCguUIvHD4tbHBFOthhjPHT1eH853DMGmO4afs1nubokCt5a6rbeVRPPNkvfV7ktKkGOrnunPEzTWrHgSQ8zlDvqRM4YxAKlgHiYy4i5YgpsVvLwAE+Y+yQp1IadDvt17UGF5XMsqdptBOgeUvxH1c8IbcDBQA6m1MEZuEiGTPRLZ1GKvuQZf3bFptFrT3si1sEd5jUvuYc9LvCon79T5vmzgUV4="
+  sonarcloud:
+    organization: "fedn20" # the key of the org you chose at step #3
+    token:
+      secure: "bEVmXcHlAmTr3MYHoHKkbHhHAH6nBqT0u3diVdPjZRHYCGHy4xMqFlN2Qoo6bNaCTkRXdwgd66qnikdxSxqJFGnVbr7Bxb/dyQY3xbE2ZvFtkVcsSSpnUGV7eAS3FPvwMwFqiaEMkFxt7mVu7gzZcS6ohP1sZ/paJDMMLuWlX9oLHCsGF21HukPDQ7jI6x/TfjVPDea3/v4POMuGULqODtodjNSuuTMjjdyHgNSr23JO3kKuhoKUxPGF1qX3jZeMMbyOVCv7sfu+yVzXdpzPbrS6MOJlfVoWz2Gwbeg910MSzF8EkwBJUIwHpUVcjHHlCAPDryLFX6aVJ+lGf1zq2Cu89taa4dAJw7H41m8W8RgXYg4NO0aT2lCcMk4GlyshsX8CcdK+PPmDa2LWbxKYExsWBBcS7xG9SLPGuAJu1EIPksy2Km6jo9gEMcHEKyDEYoiHRPZ+kHsPi2D99TTD77eXcq6HS/n1kEILgYMT/GccmjhX0bv+WW/+9cS03GALFoWrTNu213q7wz3dnHR2iordNYcoqLTDXSQBLEwdDiNl2k3/s74+Q4lCi194vxcTk87fP+IlYbW37a2gl0PcFrhydCRGV+WIvNNIySNbJQIqsKdcQ7nEmO8+yPwXeD+sjSb147xCeL4H6OyemF+u/eyM2aYKz03hyL0fU6aVdYs="
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
   - yarn report-coverage
-  # - sonar-scanner
+  - sonar-scanner
   - yarn build
 
 deploy:
