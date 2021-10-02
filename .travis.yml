@@ -5,7 +5,8 @@ addons:
   sonarcloud:
     organization: "react-dev" # the key of the org you chose at step #3
     token:
-      secure: $SONAR_TOKEN # encrypted value of your token
+      secure:
+  secure: "bgta6pgXIJiQPjSHvnuNc9njGMtQ1/fS9D/4lPG8bmb8MmkS7RepgDyoQfo/1Av3mzXpBN+jTJ9EoiEtynQ5TKfqTV0ssaHVVyoPoT0w2RD4CCk7WWpjfp275R+U/e25xlmXM1svLlPp2V0ajuzfvPrTgw009+OP6qQbWstlD2ajcA48Mwj9vS9leeQ0rmHIdGE7/ausbVlFwEwKTt5QLZLXKDBCSp8qjnmLAcvKh/N7uE+9W9U7LKPWLSgr/n1hH2fSl+7JBN3gbSUnmFKX8xfh7dx90sjCGDEtutNjQpe5n9LXgwCSEZSD+aVWu19xvw8XWYGz3zyry3//tVPiMpHWlNYoThWZlNxf07b0YhUbTbFeSADnmrZT/vkLJ941xR6kiHndBMzPMI6rVxOc+XfldsnB5Rt2EVL7RsozYyYeLgQ0eTcSOxGS9XGGv/d/ECcwYHiH+N3MTy1MEk+LcB0EmWMPfav0EyVjOEj0nB7kCP5cq6jN6HH/1KlWMOpOSpfSanpj6ZoYNA+hwrRyqUxPTULO4NdNmZbxYfd523hGrVcsU6xM8S+1o0u+i7GiZbOV+22yufkfJndUY1TaoaDjwsWtyOeIw6nsPrjnbN7xuKewLxZlkV6n5ML1GFsDamyscuMxNEKEwL/qPSCwXGkFdH+s5n/BfjwBm7O/MP0=" # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
