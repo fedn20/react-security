@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: "fedn20" # the key of the org you chose at step #3
     token:
-      secure: $SONAR_TOKEN
+      secure: b8776176d3d77baa8ac4670c2c71703785c07d71
 script:
   # other script steps might be done before running the actual analysis
   - yarn coverage
